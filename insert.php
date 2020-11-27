@@ -11,10 +11,10 @@ if (mysqli_connect_errno($conn))
 $Product = $_POST['Product'];
 $Price = $_POST['Price'];
 $Amount = $_POST['Amount'];
-$Total = $_POST['Total'];
+$Total = $_POST['Price']*$_POST['Amount'];
 
 
-$sql = "INSERT INTO guestbook (Product , Price , Amount , Total) VALUES ('$Product', '$Price', '$Amount', $Result['Price']*$Result['Amount'] )";
+$sql = "INSERT INTO guestbook (Product , Price , Amount , Total) VALUES ('$Product', '$Price', '$Amount', '$Total')";
 
 
 if (mysqli_query($conn, $sql)) {
