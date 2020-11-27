@@ -11,7 +11,7 @@ if (mysqli_connect_errno($conn))
 $ID = $_POST['ID'];
 
 
-$sql = "DELETE FROM guestbook WHERE id='$ID'";
+$sql = "DELETE FROM guestbook WHERE ID ='$ID'";
 
 
 if (mysqli_query($conn, $sql)) {
