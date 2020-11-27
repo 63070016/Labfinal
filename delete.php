@@ -15,7 +15,7 @@ $sql = "DELETE FROM guestbook WHERE id='$id'";
 
 
 if (mysqli_query($conn, $sql)) {
-    <button onclick ="location.href='index.html'"> </button> ;
+    <button onclick ="location.href='show.php'"> </button> ;
   } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
   }
