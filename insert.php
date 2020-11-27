@@ -8,13 +8,13 @@ if (mysqli_connect_errno($conn))
 }
 
 
-$product = $_POST['product'];
-$price = $_POST['price'];
-$amount = $_POST['amount'];
-$total = $_POST['total'];
+$Product = $_POST['Product'];
+$Price = $_POST['Price'];
+$Amount = $_POST['Amount'];
+$Total = $_POST['Total'];
 
 
-$sql = "INSERT INTO guestbook (Product , Price , Amount , Total) VALUES ('$product', '$price', '$amount', '$total')";
+$sql = "INSERT INTO guestbook (Product , Price , Amount , Total) VALUES ('$Product', '$Price', '$Amount', '$Total')";
 
 
 if (mysqli_query($conn, $sql)) {
