@@ -14,7 +14,7 @@ $Amount = $_POST['Amount'];
 $Total = $_POST['Total'];
 
 
-$sql = "INSERT INTO guestbook (Product , Price , Amount , Total) VALUES ('$Product', '$Price', '$Amount', '$Total')";
+$sql = "INSERT INTO guestbook (Product , Price , Amount , Total) VALUES ('$Product', '$Price', '$Amount', $Result['Price']*$Result['Amount'] )";
 
 
 if (mysqli_query($conn, $sql)) {
