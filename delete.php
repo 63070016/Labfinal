@@ -8,10 +8,10 @@ if (mysqli_connect_errno($conn))
 }
 
 
-$ID = $_GET['ID'];
+$ID = $_POST['ID'];
 
 
-$sql = "DELETE FROM guestbook WHERE ID='$ID'";
+$sql = "DELETE FROM guestbook WHERE name='$ID'";
 
 
 if (mysqli_query($conn, $sql)) {
